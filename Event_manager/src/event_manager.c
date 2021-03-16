@@ -40,7 +40,11 @@ int trigger_evt(int event)
 }
 void free_event()
 {
-	free(head);
-	free(temp);
-	free(tail);
+	temp=head;
+	while(temp)
+	{
+		head=temp->next;
+		free(temp)
+		temp=head
+	}
 }
